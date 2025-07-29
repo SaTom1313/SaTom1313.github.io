@@ -1,6 +1,7 @@
 ---
 layout: home
 title: ようこそ
+author_profile: true
 ---
 
 こんにちは　金沢大学大学院自然科学研究科物質化学専攻の山本創大です。  
