@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "学会発表"
-permalink: /presentation/
+permalink: /
 author_profile: true
 ---
 
