@@ -12,7 +12,6 @@ author_profile: true
 
 2. [ポスター発表, 査読なし] ○Sohta Yamamoto, Tomoki Nagaoka, Takuya Ogaki, Yasunori Matsui, Hiroshi Ikeda, Hajime Maeda. “Synthesis, structure and fluorescence properties of 1,6-diarylpyrene encapsulated with methylene chains ”, The 19th International Symposium on Macrocyclic and Supramolecular Chemistry in conjunction with 9th NanoLSI Symposium (ISMSC2025), Koto, May, 2025.
 
----
 
 ## 【国内学会】
 
