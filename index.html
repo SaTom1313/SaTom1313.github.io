@@ -3,7 +3,6 @@ layout: default
 title: "ホーム"
 ---
 
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -18,8 +17,10 @@ title: "ホーム"
     }
 
     body {
-      font-family: 'Helvetica Neue', sans-serif;
-      line-height: 1.6;
+      font-family: "Meiryo", sans-serif;
+      font-size: 18px;
+      line-height: 1.7;
+      color: #333;
     }
 
     /* ヘッド部 */
@@ -67,36 +68,40 @@ title: "ホーム"
       font-size: 2rem;
       margin-bottom: 1rem;
     }
+
+    .section-bottom img {
+      max-width: 80%;
+      height: auto;
+      margin-top: 1.5rem;
+    }
   </style>
 </head>
+
 <body>
 
-<section class="section-head">
+  <section class="section-head">
     <h1>金沢大学大学院 精密有機合成化学研究室</h1>
-    <img src="assets/image/pyrene.png" alt="ヘッダー画像" class="head-image" />
-</section>
+    <img src="/assets/image/pyrene.png" alt="ヘッダー画像" class="head-image" />
+  </section>
 
-
-<section class="section-middle">
-  <p>氏  名 : 山本創大 / Sohta Yamamoto</p>
-  <p>所　属 : 金沢大学大学院自然科学研究科物質化学専攻 精密有機合成化学研究室　<a href="http://kohka.ch.t.kanazawa-u.ac.jp/lab4/maeda.html">(前多研)</a></p> 
-  <p>学　年 : 博士前期課程2年</p>
-  <p>指導教員: 前多　肇</p>
-</section>
-
-<style>
-  .section-middle {
-    font-family: "Meiryo", sans-serif;
-    font-size: 16px;
-  }
-</style>
-
+  <section class="section-middle">
+    <p>氏　名 : 山本創大 / Sohta Yamamoto</p>
+    <p>所　属 : 金沢大学大学院自然科学研究科物質化学専攻 精密有機合成化学研究室　
+      <a href="http://kohka.ch.t.kanazawa-u.ac.jp/lab4/maeda.html" target="_blank">(前多研)</a>
+    </p> 
+    <p>学　年 : 博士前期課程2年</p>
+    <p>指導教員 : 前多 肇</p>
+  </section>
 
   <section class="section-bottom">
     <h2><b><u>研究内容</u></b></h2>
     <h3>新規蛍光分子の開発</h3>
-    <p>芳香族炭化水素は蛍光を発する分子として広く知られている。しかし、πーπ相互作用によって蛍光が減少することが知られている。現在、このπーπ相互作用を防ぎ強く蛍光を発する分子の開発を行っている。</p>
-    <img src='assets/image/研究.png'/>
+    <p>
+      芳香族炭化水素は蛍光を発する分子として広く知られている。
+      しかし、πーπ相互作用によって蛍光が減少することが知られている。
+      現在、このπーπ相互作用を防ぎ、強く蛍光を発する分子の開発を行っている。
+    </p>
+    <img src="/assets/image/研究.png" alt="研究画像" />
   </section>
 
 </body>
