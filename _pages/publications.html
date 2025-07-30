@@ -9,19 +9,5 @@ author_profile: true
   <div class="wordwrap">You can also find my articles on <a href="{{ site.author.googlescholar }}">my Google Scholar profile</a>.</div>
 {% endif %}
 
-{% include base_path %}
-
-{% if site.publication_category %}
-  {% for category in site.publication_category %}
-    {% assign posts_in_category = site.publications | where: "category", category[0] %}
-    
-    <h2>{{ category[1].title }}</h2><hr />
-    
-    {% if posts_in_category == empty %}
-      <p>投稿準備中</p>
-    {% else %}
-    {% for post in site.publications reversed %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endif %}
-{% endif %}
+<h2>Journal Articles</h2>
+<p>投稿準備中</p>
