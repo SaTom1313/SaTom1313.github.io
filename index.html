@@ -26,8 +26,9 @@ title: "ホーム"
     /* ヘッド部 */
     .section-head {
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      position: relative;
+      justify-content: flex-start;
       background: linear-gradient(to bottom, #1543b7, rgba(9, 202, 34, 0.22));
       color: white;
       padding: 2rem 1.5rem;
@@ -35,52 +36,55 @@ title: "ホーム"
     }
 
     .section-head h1 {
+      flex: 1;
       font-size: 2.2rem;
       max-width: 80%;
+      text-align: center;
     }
 
     .head-image {
       max-width: 30%;
       aspect-ratio: 1 / 1;
       object-fit: contain;
+      margin-left: auto;
+      width: auto;
+      height: 70%;
+      display: block;
+    }
+
+    /* 中央寄せで幅固定＆左揃えにするセクション共通 */
+    .section-middle,
+    .section-bottom {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem;
+      text-align: left;
     }
 
     /* 自己紹介 */
-    .section-middle {
-      background-color: #f0f0f0;
-      padding: 2.5rem 1.5rem;
-      text-align: center;
-    }
-
     .section-middle p {
       margin-bottom: 0.5rem;
     }
 
     /* 研究紹介 */
-    .section-bottom {
-      background-color: #ffffff;
-      padding: 2.5rem 1.5rem;
-      text-align: center;
-    }
-
-    .section-bottom h2 {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-    }
-
+    .section-bottom h2,
     .section-bottom h3 {
-      font-size: 1.2rem;
-      margin-bottom: 0.5rem;
+      text-align: left;
     }
 
     .section-bottom p {
-      margin-bottom: 1rem;
+      line-height: 1.8;
+      font-size: 16px;
+      margin-bottom: 20px;
+      text-align: left;
     }
 
     .section-bottom img {
-      max-width: 75%;
+      display: block;
+      max-width: 100%;
       height: auto;
-      margin-top: 1rem;
+      margin: 20px auto;
+      object-fit: cover;
     }
   </style>
 </head>
@@ -91,23 +95,7 @@ title: "ホーム"
     <h1>金沢大学大学院 精密有機合成化学研究室</h1>
     <img src="/assets/image/pyrene.png" alt="ヘッダー画像" class="head-image" />
   </section>
-  <style>
-  .head-image {
-    width: auto;
-    height: 70%;
-    object-fit: contain;
 
-    display: block;  
-    margin: 0 auto;   
-  }
-
-  .section-head h1 {
-    text-align: center;
-  }
-</style>
-
-
-  
   <section class="section-middle">
     <p>氏　名 : 山本創大 / Sohta Yamamoto</p>
     <p>所　属 : 金沢大学大学院自然科学研究科物質化学専攻 精密有機合成化学研究室　
@@ -117,45 +105,16 @@ title: "ホーム"
     <p>指導教員 : 前多 肇</p>
   </section>
 
-<section class="section-bottom">
-  <h2><b><u>研究内容</u></b></h2>
-  <h3>新規蛍光分子の開発</h3>
-  <p>
-    芳香族炭化水素は蛍光を発する分子として広く知られている。
-    しかし、πーπ相互作用によって蛍光が減少することが知られている。
-    現在、このπーπ相互作用を防ぎ、強く蛍光を発する分子の開発を行っている。
-  </p>
-  <img src="/assets/image/研究.png" alt="研究画像" />
-</section>
-
-<style>
-  .section-bottom {
-    font-family: "Meiryo", sans-serif;
-    padding: 20px;
-    max-width: 900px;
-    margin: 0 auto;
-  }
-
-  .section-bottom h2,
-  .section-bottom h3 {
-    text-align: center;
-  }
-
-  .section-bottom p {
-    text-align: justify;
-    line-height: 1.8;
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
-
-  .section-bottom img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 20px auto;
-    object-fit: cover;
-  }
-</style>
+  <section class="section-bottom">
+    <h2><b><u>研究内容</u></b></h2>
+    <h3>新規蛍光分子の開発</h3>
+    <p>
+      芳香族炭化水素は蛍光を発する分子として広く知られている。
+      しかし、πーπ相互作用によって蛍光が減少することが知られている。
+      現在、このπーπ相互作用を防ぎ、強く蛍光を発する分子の開発を行っている。
+    </p>
+    <img src="/assets/image/研究.png" alt="研究画像" />
+  </section>
 
 </body>
 </html>
