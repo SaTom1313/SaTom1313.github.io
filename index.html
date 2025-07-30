@@ -23,11 +23,10 @@ title: "ホーム"
       color: #333;
     }
 
-    /* ヘッド部 */
+    /* ヘッダー */
     .section-head {
       display: flex;
       align-items: center;
-      position: relative;
       justify-content: flex-start;
       background: linear-gradient(to bottom, #1543b7, rgba(9, 202, 34, 0.22));
       color: white;
@@ -52,8 +51,23 @@ title: "ホーム"
       display: block;
     }
 
-    /* 中央寄せで幅固定＆左揃えにするセクション共通 */
-    .section-middle,
+    /* 自己紹介セクション（背景全幅） */
+    .section-middle {
+      background-color: #f0f0f0;
+      padding: 2.5rem 1.5rem;
+    }
+
+    .section-middle .container {
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .section-middle p {
+      margin-bottom: 0.5rem;
+    }
+
+    /* 研究紹介 */
     .section-bottom {
       max-width: 900px;
       margin: 0 auto;
@@ -61,12 +75,6 @@ title: "ホーム"
       text-align: left;
     }
 
-    /* 自己紹介 */
-    .section-middle p {
-      margin-bottom: 0.5rem;
-    }
-
-    /* 研究紹介 */
     .section-bottom h2,
     .section-bottom h3 {
       text-align: left;
@@ -97,12 +105,14 @@ title: "ホーム"
   </section>
 
   <section class="section-middle">
-    <p>氏　名 : 山本創大 / Sohta Yamamoto</p>
-    <p>所　属 : 金沢大学大学院自然科学研究科物質化学専攻 精密有機合成化学研究室 
-      <a href="http://kohka.ch.t.kanazawa-u.ac.jp/lab4/maeda.html" target="_blank">(前多研)</a>
-    </p> 
-    <p>学　年 : 博士前期課程2年</p>
-    <p>指導教員 : 前多 肇</p>
+    <div class="container">
+      <p>氏　名 : 山本創大 / Sohta Yamamoto</p>
+      <p>所　属 : 金沢大学大学院自然科学研究科物質化学専攻 精密有機合成化学研究室
+        <a href="http://kohka.ch.t.kanazawa-u.ac.jp/lab4/maeda.html" target="_blank">(前多研)</a>
+      </p> 
+      <p>学　年 : 博士前期課程2年</p>
+      <p>指導教員 : 前多 肇</p>
+    </div>
   </section>
 
   <section class="section-bottom">
