@@ -1,10 +1,88 @@
----
-layout: home
-title: "ホーム"
-author_profile: true
----
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>山本研究室ホームページ</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-<h1>ようこそ！</h1>
-<p>これは私の学術ウェブサイトです。</p>
-<p>〇〇大学で研究をしています。<br>このサイトでは研究内容、論文、活動などをご紹介します。</p>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      line-height: 1.6;
+    }
 
+    /* ヘッド部 */
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: linear-gradient(to bottom, #1543b7, rgba(9, 202, 34, 0.22));
+      color: white;
+      padding: 3rem 2rem;
+      height: 400px;
+    }
+
+    .section-head h1 {
+      font-size: 2.8rem;
+      max-width: 60%;
+    }
+
+    .head-image {
+      max-width: 35%;
+      aspect-ratio: 1 / 1;
+      object-fit: contain;
+    }
+
+    /* 2段目：グレー */
+    .section-middle {
+      background-color: #f0f0f0;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .section-middle h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    /* 3段目：白 */
+    .section-bottom {
+      background-color: #ffffff;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .section-bottom h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1段目：グラデーションヘッダー -->
+  <section class="section-head">
+    <h1>ようこそ！山本研究室ホームページへ</h1>
+    <!-- 画像パスはGitHub上で正確な場所に合わせて変更してください -->
+    <img src="assets/images/header-logo.jpg" alt="ヘッダー画像" class="head-image" />
+  </section>
+
+  <!-- 2段目：研究内容 -->
+  <section class="section-middle">
+    <h2>研究内容</h2>
+    <p>有機化学・超分子化学に関する研究を行っています。分子の設計から機能評価まで幅広く取り組んでいます。</p>
+  </section>
+
+  <!-- 3段目：プロフィールや実績 -->
+  <section class="section-bottom">
+    <h2>プロフィール・実績</h2>
+    <p>学会発表や研究業績、メンバー紹介などを掲載しています。</p>
+  </section>
+
+</body>
+</html>
