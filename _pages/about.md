@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "About"
-permalink: /about/
+permalink: /portfolio/
 ---
 
 ## 自己紹介
