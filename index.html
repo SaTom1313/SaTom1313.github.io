@@ -24,35 +24,33 @@ title: "ホーム"
     }
 
     a {
-      color: blue;
-      text-decoration: underline;
+      color: blue; /* リンクを常に青に */
     }
 
     /* ヘッダー */
     .section-head {
+      position: relative;
+      background: linear-gradient(to bottom, #1543b7, rgba(9, 202, 34, 0.22));
+      color: white;
+      height: 280px;
+      padding: 0 1.5rem;
       display: flex;
       align-items: center;
       justify-content: center;
-      background: linear-gradient(to bottom, #1543b7, rgba(9, 202, 34, 0.22));
-      color: white;
-      padding: 2rem 1.5rem;
-      height: 280px;
+      flex-wrap: wrap;
     }
 
     .section-head h2 {
-      font-size: 2.2rem;
+      flex: 1 1 100%;
       text-align: center;
-      margin-right: auto;
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
     }
 
     .head-image {
-      max-width: 30%;
-      aspect-ratio: 1 / 1;
+      max-width: 180px;
+      height: auto;
       object-fit: contain;
-      margin-left: auto;
-      width: auto;
-      height: 70%;
-      display: block;
     }
 
     /* 自己紹介セクション（背景全幅） */
@@ -102,6 +100,35 @@ title: "ホーム"
     /* π だけ Segoe UI に */
     .pi {
       font-family: "Segoe UI", sans-serif;
+    }
+
+    /* スマホ対応 */
+    @media (max-width: 768px) {
+      .section-head {
+        flex-direction: column;
+        height: auto;
+        padding: 1.5rem 1rem;
+      }
+
+      .section-head h2 {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+      }
+
+      .head-image {
+        max-width: 150px;
+        height: auto;
+        margin: 0 auto;
+      }
+
+      body {
+        font-size: 16px;
+      }
+
+      .section-middle,
+      .section-bottom {
+        padding: 2rem 1rem;
+      }
     }
   </style>
 </head>
