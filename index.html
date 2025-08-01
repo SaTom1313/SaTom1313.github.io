@@ -24,36 +24,39 @@ title: "ホーム"
     }
 
     a {
-      color: blue; /* リンクを常に青に */
+      color: blue;
     }
 
     /* ヘッダー */
     .section-head {
-      position: relative;
+      display: flex;
       background: linear-gradient(to bottom, #1543b7, rgba(9, 202, 34, 0.22));
       color: white;
       height: 280px;
       padding: 0 1.5rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: wrap;
     }
 
-    .section-head h2 {
-      flex: 1 1 100%;
-      text-align: center;
+    .text-box {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .text-box h2 {
       font-size: 2.2rem;
-      margin-bottom: 1rem;
+      text-align: center;
     }
 
     .head-image {
-      max-width: 180px;
-      height: auto;
+      max-width: 30%;
+      height: 70%;
       object-fit: contain;
+      margin-left: auto;
+      display: block;
     }
 
-    /* 自己紹介セクション（背景全幅） */
+    /* 自己紹介セクション */
     .section-middle {
       background-color: #f0f0f0;
       padding: 2.5rem 1.5rem;
@@ -97,7 +100,6 @@ title: "ホーム"
       object-fit: cover;
     }
 
-    /* π だけ Segoe UI に */
     .pi {
       font-family: "Segoe UI", sans-serif;
     }
@@ -110,24 +112,29 @@ title: "ホーム"
         padding: 1.5rem 1rem;
       }
 
-      .section-head h2 {
-        font-size: 1.6rem;
-        margin-bottom: 1rem;
-      }
-
       .head-image {
-        max-width: 150px;
+        max-width: 180px;
         height: auto;
-        margin: 0 auto;
+        margin: 1rem auto 0;
       }
 
-      body {
-        font-size: 16px;
+      .text-box {
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 0;
+      }
+
+      .text-box h2 {
+        font-size: 1.6rem;
       }
 
       .section-middle,
       .section-bottom {
         padding: 2rem 1rem;
+      }
+
+      body {
+        font-size: 16px;
       }
     }
   </style>
@@ -136,7 +143,9 @@ title: "ホーム"
 <body>
 
   <section class="section-head">
-    <h2>山本創大のホームページ</h2>
+    <div class="text-box">
+      <h2>山本創大のホームページ</h2>
+    </div>
     <img src="assets/image/pyreneW.png" alt="ヘッダー画像" class="head-image" />
   </section>
 
