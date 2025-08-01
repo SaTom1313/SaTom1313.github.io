@@ -30,8 +30,6 @@ title: "ホーム"
     /* ヘッダー */
     .section-head {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
       background: linear-gradient(to bottom, #1543b7, rgba(9, 202, 34, 0.22));
       color: white;
       height: 280px;
@@ -43,7 +41,6 @@ title: "ホーム"
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100%;
     }
 
     .text-box h2 {
@@ -55,8 +52,7 @@ title: "ホーム"
       max-height: 70%;
       max-width: 30%;
       object-fit: contain;
-      margin-left: auto;
-      display: block;
+      align-self: center;
     }
 
     /* 自己紹介セクション */
@@ -92,7 +88,6 @@ title: "ホーム"
       line-height: 1.8;
       font-size: 16px;
       margin-bottom: 20px;
-      text-align: left;
     }
 
     .section-bottom img {
@@ -112,23 +107,22 @@ title: "ホーム"
       .section-head {
         flex-direction: column;
         height: auto;
+        text-align: center;
         padding: 1.5rem 1rem;
+      }
+
+      .text-box {
+        padding: 1rem 0;
+      }
+
+      .text-box h2 {
+        font-size: 1.6rem;
       }
 
       .head-image {
         max-width: 180px;
         height: auto;
         margin: 1rem auto 0;
-      }
-
-      .text-box {
-        justify-content: center;
-        align-items: center;
-        padding: 1rem 0;
-      }
-
-      .text-box h2 {
-        font-size: 1.6rem;
       }
 
       .section-middle,
